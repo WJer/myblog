@@ -1,0 +1,28 @@
+{
+  "name": "myblog",
+  "version": "0.0.1",
+  "description": "## 功能包括：",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WJer/myblog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bin": {
+    "myblog": "./bin/myblog.js"
+  },
+  "bugs": {
+    "url": "https://github.com/WJer/myblog/issues"
+  },
+  "homepage": "https://github.com/WJer/myblog#readme",
+  "dependencies": {
+    "commander": "^2.12.1",
+    "express": "^4.16.2",
+    "markdown-it": "^8.4.0",
+    "serve-static": "^1.13.1"
+  }
+}
