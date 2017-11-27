@@ -1,8 +1,8 @@
 ---
 
 title: hello wrold
-
 date: 3017-11-27
+layout: post2
 
 ---
 
