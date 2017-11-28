@@ -12,24 +12,23 @@ program
 		program.outputHelp();
 	});
 
+//创建空的博客项目
 program
-	.command('create [dir]')
-	.description('创建一个空的博客')
-	.action(function(dir) {
-		console.log('create %s', dir);
-	});
+	.command('init [dir]')
+	.description('博客脚手架')
+	.action(require('../lib/cmd_init'));
 
+//执行预览功能
 program
 	.command('preview [dir]')
 	.description('实时预览')
 	.action(require('../lib/cmd_preview'));
 
+//生成html页面
 program
 	.command('build [dir]')
 	.description('生成整站静态html')
 	.option('-o, --output <dir>')
-	.action(function(dir, options) {
-		console.log('create %s, output %s', dir, options.output);
-	});
+	.action(require('../lib/cmd_build'));
 
 program.parse(process.argv);
