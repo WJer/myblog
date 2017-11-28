@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>文章列表</title>
+</head>
+<body>
+	<ul>
+		{% for post in posts %}
+		<li>
+			<span class="post-date">{{post.date|escape}}</span>
+			<a href="{{post.url}}" class="post-title">{{post.title|escape}}</a>
+		</li>
+		{% endfor %}
+	</ul>
+</body>
+</html>

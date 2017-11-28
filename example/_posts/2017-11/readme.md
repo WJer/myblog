@@ -1,7 +1,7 @@
 ---
 
-title: hello wrold
-date: 3017-11-27
+title: readme
+date: 2017-11-27
 layout: post2
 
 ---
